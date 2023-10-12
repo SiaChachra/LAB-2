@@ -25,9 +25,6 @@ for (var i = 0; i < sliders.length; i++) {
 /* Functions
 -------------------------------------------------- */
 
-// Global rgb array
-var rgb = [0, 0, 0];
-
 // STEP 1: Write a function called changeRgb that accepts two 
 //parameters, channel and value
 function changeRgb(channel, value) {
@@ -39,13 +36,13 @@ function changeRgb(channel, value) {
         // STEP 3: Inside each case, update the appropriate 
         // global rgb array element (0, 1, or 2)
         case 'red':
-            rgb[0] = parseInt(value, 10);
+            rgb[0] = value;
             break;
         case 'green':
-            rgb[1] = parseInt(value, 10);
+            rgb[1] = value;
             break;
         case 'blue':
-            rgb[2] = parseInt(value, 10);
+            rgb[2] = value;
             break;
 
     }
@@ -81,4 +78,4 @@ function writeCSS(newRgb) {
     return newColor;
 }
 
-        // STEP 12: Enjoy the application in your browser!
+    // STEP 12: Enjoy the application in your browser!
